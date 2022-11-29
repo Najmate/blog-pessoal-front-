@@ -4,9 +4,9 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
+
 
 export default function Navbar() {
     return (
@@ -39,11 +39,14 @@ export default function Navbar() {
                             <Button color="inherit">cadastrar tema</Button>
                         </Typography>
                     </Box>
-                    <Box mx={1} style={{ cursor: "pointer" }}>
-                        <Typography variant="h6" color="inherit">
-                            <Button color="inherit">logout</Button>
-                        </Typography>
-                    </Box>
+                    <Link to='/login' className='text-decorator-none'>
+                        <Box mx={1} style={{ cursor: "pointer", color: 'white' }}>
+                            <Typography variant="h6" color="inherit">
+                                <Button color="inherit">logout</Button>
+                            </Typography>
+                        </Box>
+                    </Link>
+
                 </Box>
 
             </Toolbar>

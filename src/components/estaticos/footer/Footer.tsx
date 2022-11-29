@@ -4,7 +4,7 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import { Typography, Grid } from '@material-ui/core';
 import { Box } from '@mui/material';
-import { purple } from '@material-ui/core/colors';
+import './Footer.css';
 
 function Footer() {
     return (
@@ -31,8 +31,8 @@ function Footer() {
                         <Box paddingTop={1}>
                             <Typography variant="subtitle2" align="center" gutterBottom style={{ color: "white" }} >© 2020 Copyright:</Typography>
                         </Box>
-                        <Box>
-                            <a target="_blank" href="https://brasil.generation.org">
+                        <Box >
+                            <a className='text-decorator-none' target="_blank" href="https://brasil.generation.org">
                                 <Typography variant="subtitle2" gutterBottom style={{ color: "white" }} align="center">brasil.generation.org</Typography>
                             </a>
                         </Box>
